@@ -15,6 +15,12 @@
 		7F04C2041B267AC300E50AE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F04C2031B267AC300E50AE9 /* Images.xcassets */; };
 		7F04C2071B267AC300E50AE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F04C2051B267AC300E50AE9 /* LaunchScreen.xib */; };
 		7F04C2131B267AC300E50AE9 /* GameSpriteKitExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04C2121B267AC300E50AE9 /* GameSpriteKitExampleTests.swift */; };
+		7F04C21D1B267FBA00E50AE9 /* ShooterScene(CCT).swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F04C21C1B267FBA00E50AE9 /* ShooterScene(CCT).swift */; };
+		7F04C21F1B267FF500E50AE9 /* ShooterScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F04C21E1B267FF500E50AE9 /* ShooterScene.sks */; };
+		7F04C2211B2682D600E50AE9 /* character.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 7F04C2201B2682D600E50AE9 /* character.atlas */; };
+		7F04C2271B26914300E50AE9 /* teemo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F04C2261B26914300E50AE9 /* teemo.png */; };
+		7F04C2291B26914A00E50AE9 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F04C2281B26914A00E50AE9 /* bullet.png */; };
+		7F04C23D1B26E0D800E50AE9 /* kamehameha.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F04C23C1B26E0D800E50AE9 /* kamehameha.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		7F04C20C1B267AC300E50AE9 /* GameSpriteKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameSpriteKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F04C2111B267AC300E50AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F04C2121B267AC300E50AE9 /* GameSpriteKitExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSpriteKitExampleTests.swift; sourceTree = "<group>"; };
+		7F04C21C1B267FBA00E50AE9 /* ShooterScene(CCT).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShooterScene(CCT).swift"; sourceTree = "<group>"; };
+		7F04C21E1B267FF500E50AE9 /* ShooterScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShooterScene.sks; sourceTree = "<group>"; };
+		7F04C2201B2682D600E50AE9 /* character.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = character.atlas; sourceTree = SOURCE_ROOT; };
+		7F04C2261B26914300E50AE9 /* teemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teemo.png; sourceTree = SOURCE_ROOT; };
+		7F04C2281B26914A00E50AE9 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = SOURCE_ROOT; };
+		7F04C23C1B26E0D800E50AE9 /* kamehameha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamehameha.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,8 @@
 			children = (
 				7F04C1F81B267AC300E50AE9 /* AppDelegate.swift */,
 				7F04C1FA1B267AC300E50AE9 /* GameScene.sks */,
+				7F04C21E1B267FF500E50AE9 /* ShooterScene.sks */,
+				7F04C21C1B267FBA00E50AE9 /* ShooterScene(CCT).swift */,
 				7F04C1FC1B267AC300E50AE9 /* GameScene.swift */,
 				7F04C1FE1B267AC300E50AE9 /* GameViewController.swift */,
 				7F04C2001B267AC300E50AE9 /* Main.storyboard */,
@@ -96,6 +110,10 @@
 		7F04C1F61B267AC300E50AE9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F04C2261B26914300E50AE9 /* teemo.png */,
+				7F04C23C1B26E0D800E50AE9 /* kamehameha.png */,
+				7F04C2281B26914A00E50AE9 /* bullet.png */,
+				7F04C2201B2682D600E50AE9 /* character.atlas */,
 				7F04C1F71B267AC300E50AE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -199,9 +217,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F04C2071B267AC300E50AE9 /* LaunchScreen.xib in Resources */,
+				7F04C2271B26914300E50AE9 /* teemo.png in Resources */,
 				7F04C2041B267AC300E50AE9 /* Images.xcassets in Resources */,
 				7F04C1FB1B267AC300E50AE9 /* GameScene.sks in Resources */,
+				7F04C2211B2682D600E50AE9 /* character.atlas in Resources */,
+				7F04C2291B26914A00E50AE9 /* bullet.png in Resources */,
 				7F04C2021B267AC300E50AE9 /* Main.storyboard in Resources */,
+				7F04C21F1B267FF500E50AE9 /* ShooterScene.sks in Resources */,
+				7F04C23D1B26E0D800E50AE9 /* kamehameha.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +245,7 @@
 				7F04C1FD1B267AC300E50AE9 /* GameScene.swift in Sources */,
 				7F04C1FF1B267AC300E50AE9 /* GameViewController.swift in Sources */,
 				7F04C1F91B267AC300E50AE9 /* AppDelegate.swift in Sources */,
+				7F04C21D1B267FBA00E50AE9 /* ShooterScene(CCT).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

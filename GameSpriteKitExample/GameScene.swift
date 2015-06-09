@@ -9,37 +9,32 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    /* Setup your scene here */
+
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
-        self.addChild(myLabel)
     }
     
+    /* Called when a touch begins */
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        /* Called when a touch begins */
+        let lbIntro = childNodeWithName("lbIntro")
         
-        for touch in (touches as! Set<UITouch>) {
-            let location = touch.locationInNode(self)
+        if (lbIntro != nil){
+            //make the scene fade out to the next scene
+            let fadeOut = SKAction.fadeInWithDuration(1.0)
             
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+            lbIntro?.runAction(fadeOut, completion: {
+                let doors  = SKTransition.doorwayWithDuration(2.0)
+                
+                let shooterScene = ShooterScene_CCT_(fileNamed:  "ShooterScene")
+                
+                self.view?.presentScene(shooterScene, transition:doors)
+            })
         }
     }
-   
+    
+   /* Called before each frame is rendered */
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        
     }
 }
